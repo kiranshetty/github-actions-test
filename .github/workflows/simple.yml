@@ -17,4 +17,8 @@ jobs:
               import platform
               print(platform.processor())
             shell: python  
-          
+    run-shell-command-for-windows:
+        runs-on: windows-latest
+        steps:   
+          - name: print current directory
+            run: echo $PATH  
