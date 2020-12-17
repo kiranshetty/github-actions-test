@@ -20,5 +20,6 @@ jobs:
     run-shell-command-for-windows:
         runs-on: windows-latest
         steps:   
-          - name: print current directory
+          - name: print path
             run: echo $PATH  
+            shell: bash
