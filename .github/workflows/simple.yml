@@ -19,6 +19,7 @@ jobs:
             shell: python  
     run-shell-command-for-windows:
         runs-on: windows-latest
+        needs: ["run-shell-command"]
         steps:   
           - name: print path
             run: echo $PATH  
